@@ -6,14 +6,19 @@
     font-family: 'Poppins',sans-serif;
 }
 
+body {
+	/* overflow: hidden; */
+	height: 95vh;
+}
+
 ::selection {
-    color: #000;
-    background: #fff;
+    color: #191970;
+    background: #E19C35;
 }
 
 nav {
     position: fixed;
-    background: gray;
+    background: #191970;
     width: 100%;
     padding: 10px 0;
     z-index: 12;
@@ -30,8 +35,8 @@ nav .menu {
 
 .menu .logo a {
     text-decoration: none;
-    color: whitesmoke;
-    font-size: 13px;
+    color: seashell;
+    font-size: 35px;
     font-weight: 600;
 }
 
@@ -49,9 +54,9 @@ nav .menu {
 }
 
 .menu ul li a {
-    text-decoration: underline;
-    color: white;
-    font-size: 13px;
+    text-decoration: none;
+    color: seashell;
+    font-size: 18px;
     font-weight: 500;
     padding: 8px 15px;
     border-radius: 5px;
@@ -59,55 +64,21 @@ nav .menu {
 }
 
 .menu ul li a:hover {
-    text-decoration: none;
-    background: #fff;
-    color: black;
+    background: #E19C35;
+    color: seashell;
 }
 
-/* .img {
-    background: url('img3.jpg')no-repeat;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.main .title {
+    color: #191970;
+    font-size: 50px;
+    font-weight: 700;
 }
 
-.img::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #fffdfa; /*rgba(0, 0, 0, 0.4); */
-} */
-
-.center {
-    position: absolute;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.center .title {
-    color: purple;
-    font-size: 55px;
-    font-weight: 600;
-}
-
-.center .sub_title {
-    color: purple;
-    font-size: 52px;
-    font-weight: 600;
-}
-
-.center .btns {
+.main .btns {
     margin-top: 20px;
 }
 
-.center .btns button {
+.main .btns button {
     height: 55px;
     width: 170px;
     border-radius: 5px;
@@ -122,28 +93,43 @@ nav .menu {
     transition: all 0.3s ease;
 }
 
-/* First button */
-.center .btns button:first-child {
-    color: gray;
-    background: white;
-    border: 2px solid gray;
+.main .btns button:first-child {
+    color: seashell;
+    background: #E19C35;
+    border: 2px solid #E19C35;
 }
 
 .btns button:first-child:hover {
-    background: lightseagreen;
-    color: white;
-    border: 2px solid lightseagreen;
+	color: #E19C35;
+    background: seashell;
 }
 
-/* Second button */
-.center .btns button:last-child {
-    background: gray;
-    color: white;
-    border: 2px solid gray;
+.main .btns button:last-child {
+    background: seashell;
+    color: #191970;
 }
 
 .btns button:last-child:hover {
-    background: white;
-    color: lightseagreen;
-    border: 2px solid lightseagreen; 
+    background: #191970;
+    color: seashell;
   }
+
+div .footer {
+    width: 100%;
+	height: 100px;
+	text-align: center;
+	justify-content: center;
+}
+
+.social-icon {
+	color: #aaaaaa;
+	transition: color 0.2s;
+	text-decoration: none;
+	margin: 0 10px;
+	font-size: 32px;
+	/* text-align: center; */
+}
+
+.social-icon:hover {
+	color: #E19C35;
+}
